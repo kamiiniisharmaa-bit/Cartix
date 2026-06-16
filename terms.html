@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartix · Terms & Conditions</title>
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: #faf9f6;
+      color: #1e1e2a;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header / nav (same as home) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #1e1e2a, #3b3b4f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .logo i {
+      -webkit-text-fill-color: #2a2a3a;
+      margin-right: 6px;
+      font-size: 1.8rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-weight: 500;
+      color: #2d2d3f;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    .nav-links a:hover {
+      color: #6c5ce7;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 1.4rem;
+      font-size: 1.3rem;
+      color: #2d2d3f;
+    }
+    .nav-icons i {
+      cursor: default;
+      transition: 0.2s;
+    }
+    .nav-icons i:hover {
+      color: #6c5ce7;
+      transform: scale(1.05);
+    }
+
+    /* back link */
+    .back-link {
+      margin: 2.2rem 0 1rem 0;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #6c5ce7;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      color: #3b2cb0;
+      transform: translateX(-4px);
+    }
+
+    /* terms content */
+    .terms-paper {
+      background: white;
+      border-radius: 2.2rem;
+      padding: 2.8rem 3.2rem;
+      margin: 1.5rem 0 3rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .terms-paper h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+    }
+    .terms-paper .subhead {
+      color: #5e5e74;
+      font-size: 1rem;
+      border-bottom: 1px solid #ebebf0;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .terms-paper .subhead span i {
+      margin-right: 6px;
+      color: #6c5ce7;
+    }
+
+    .terms-paper h2 {
+      font-size: 1.4rem;
+      font-weight: 650;
+      margin: 2rem 0 0.8rem 0;
+      color: #1a1a2b;
+    }
+    .terms-paper h2:first-of-type {
+      margin-top: 0;
+    }
+    .terms-paper p {
+      color: #2f2f42;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .terms-paper ul, .terms-paper ol {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0 1.2rem 0;
+      color: #2f2f42;
+    }
+    .terms-paper li {
+      margin-bottom: 0.4rem;
+      line-height: 1.6;
+    }
+    .terms-paper .highlight-box {
+      background: #f6f4fc;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1.4rem;
+      margin: 1.8rem 0;
+      border-left: 4px solid #6c5ce7;
+    }
+    .terms-paper .highlight-box p {
+      margin-bottom: 0.2rem;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 2rem;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      padding: 2.2rem 0 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: #3b3b4f;
+    }
+    .footer .copy {
+      font-size: 0.9rem;
+    }
+    .footer .social i {
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      color: #2d2d3f;
+      transition: 0.2s;
+    }
+    .footer .social i:hover {
+      color: #6c5ce7;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: stretch;
+        text-align: center;
+      }
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .nav-icons {
+        justify-content: center;
+      }
+      .terms-paper {
+        padding: 1.8rem 1.5rem;
+      }
+      .terms-paper h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .terms-paper {
+        padding: 1.2rem 1rem;
+        border-radius: 1.4rem;
+      }
+      .terms-paper h1 {
+        font-size: 1.6rem;
+      }
+      .back-link {
+        margin-top: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- header (same as home) -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-cart-plus"></i> Cartix
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="nav-icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </header>
+
+  <!-- back to home (conceptual) -->
+  <div class="back-link">
+    <a href="#"><i class="fas fa-arrow-left"></i> Back to Cartix home</a>
+  </div>
+
+  <!-- terms page main content -->
+  <div class="terms-paper">
+    <h1>Terms & Conditions</h1>
+    <div class="subhead">
+      <span><i class="fas fa-calendar-alt"></i> Last updated: June 16, 2026</span>
+      <span><i class="fas fa-globe"></i> Cartix · worldwide</span>
+    </div>
+
+    <p><strong>Welcome to Cartix.</strong> These terms govern your use of our website and services. By using Cartix, you agree to these terms in full. If you disagree, please do not use our site.</p>
+
+    <h2>1. General</h2>
+    <p>Cartix (“we”, “us”, “our”) provides an online marketplace for curated fashion, accessories, and lifestyle goods. All content, products, and services are provided “as is”. We reserve the right to update these terms at any time without prior notice.</p>
+
+    <h2>2. Orders & Payment</h2>
+    <p>When you place an order, you agree to provide current, complete, and accurate purchase and account information. We reserve the right to refuse or cancel any order for reasons including but not limited to: product availability, errors in pricing, or suspected fraud.</p>
+    <ul>
+      <li><strong>Pricing:</strong> All prices are listed in USD and are subject to change. Taxes and shipping fees are added at checkout.</li>
+      <li><strong>Payment:</strong> We accept major credit cards, PayPal, and other secure methods. You authorize us to charge your selected payment method for the total amount.</li>
+      <li><strong>Order confirmation:</strong> An order confirmation email does not guarantee acceptance; we may cancel after confirmation if issues arise.</li>
+    </ul>
+
+    <h2>3. Shipping & Delivery</h2>
+    <p>We strive to process and ship orders within 1–3 business days. Estimated delivery times are provided but not guaranteed. Risk of loss passes to you upon delivery to the carrier. We are not liable for delays caused by customs, weather, or carrier issues.</p>
+
+    <h2>4. Returns & Exchanges</h2>
+    <p>We accept returns within 30 days of receipt for most items in original condition. Return shipping costs are your responsibility unless the item is defective. To initiate a return, contact our support team. Refunds are issued to the original payment method.</p>
+
+    <div class="highlight-box">
+      <p><i class="fas fa-gavel" style="margin-right: 10px; color: #6c5ce7;"></i> <strong>Important:</strong> Final sale items, custom orders, and perishable goods are not eligible for return. Please check product descriptions carefully.</p>
+    </div>
+
+    <h2>5. Intellectual Property</h2>
+    <p>All content on this site — including images, text, logos, graphics, and software — is the property of Cartix or our content suppliers and is protected by international copyright and trademark laws. You may not reproduce, distribute, or create derivative works without explicit permission.</p>
+
+    <h2>6. User Accounts</h2>
+    <p>You may create an account to access certain features. You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account. Notify us immediately of any unauthorized use. We reserve the right to suspend or terminate accounts that violate these terms.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Cartix is not liable for any indirect, incidental, or consequential damages arising from your use of our site or products. Our total liability for any claim shall not exceed the amount you paid for the product or service in question.</p>
+
+    <h2>8. Governing Law</h2>
+    <p>These terms are governed by the laws of the State of California, without regard to conflict of law principles. Any disputes shall be resolved exclusively in the state or federal courts located in San Francisco, CA.</p>
+
+    <h2>9. Contact</h2>
+    <p>For any questions about these terms, please reach out to us at <strong>legal@cartix.co</strong> or via our contact form. We aim to respond within 2 business days.</p>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #6b6b80;"><i class="fas fa-check-circle" style="color: #6c5ce7; margin-right: 6px;"></i> By continuing to use Cartix, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.</p>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copy">
+      <i class="fas fa-cart-plus" style="margin-right: 6px;"></i> Cartix · 2026 · all rights reserved
+    </div>
+    <div class="social">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </footer>
+
+</div> <!-- container -->
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartix · Privacy Policy</title>
+  <!-- Font Awesome (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: #faf9f6;
+      color: #1e1e2a;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header / nav (consistent) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(145deg, #1e1e2a, #3b3b4f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .logo i {
+      -webkit-text-fill-color: #2a2a3a;
+      margin-right: 6px;
+      font-size: 1.8rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      font-weight: 500;
+      color: #2d2d3f;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    .nav-links a:hover {
+      color: #6c5ce7;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 1.4rem;
+      font-size: 1.3rem;
+      color: #2d2d3f;
+    }
+    .nav-icons i {
+      cursor: default;
+      transition: 0.2s;
+    }
+    .nav-icons i:hover {
+      color: #6c5ce7;
+      transform: scale(1.05);
+    }
+
+    /* back link */
+    .back-link {
+      margin: 2.2rem 0 1rem 0;
+    }
+    .back-link a {
+      text-decoration: none;
+      color: #6c5ce7;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.2s;
+    }
+    .back-link a:hover {
+      color: #3b2cb0;
+      transform: translateX(-4px);
+    }
+
+    /* privacy paper */
+    .privacy-paper {
+      background: white;
+      border-radius: 2.2rem;
+      padding: 2.8rem 3.2rem;
+      margin: 1.5rem 0 3rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .privacy-paper h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+    }
+    .privacy-paper .subhead {
+      color: #5e5e74;
+      font-size: 1rem;
+      border-bottom: 1px solid #ebebf0;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .privacy-paper .subhead span i {
+      margin-right: 6px;
+      color: #6c5ce7;
+    }
+
+    .privacy-paper h2 {
+      font-size: 1.4rem;
+      font-weight: 650;
+      margin: 2rem 0 0.8rem 0;
+      color: #1a1a2b;
+    }
+    .privacy-paper h2:first-of-type {
+      margin-top: 0;
+    }
+    .privacy-paper p {
+      color: #2f2f42;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .privacy-paper ul, .privacy-paper ol {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0 1.2rem 0;
+      color: #2f2f42;
+    }
+    .privacy-paper li {
+      margin-bottom: 0.4rem;
+      line-height: 1.6;
+    }
+    .privacy-paper .highlight-box {
+      background: #f6f4fc;
+      padding: 1.2rem 1.8rem;
+      border-radius: 1.4rem;
+      margin: 1.8rem 0;
+      border-left: 4px solid #6c5ce7;
+    }
+    .privacy-paper .highlight-box p {
+      margin-bottom: 0.2rem;
+    }
+
+    .privacy-paper .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.2rem 0 0.8rem;
+    }
+    .privacy-paper .badge-grid span {
+      background: #f0eef7;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2d2d3f;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 2rem;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      padding: 2.2rem 0 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: #3b3b4f;
+    }
+    .footer .copy {
+      font-size: 0.9rem;
+    }
+    .footer .social i {
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      color: #2d2d3f;
+      transition: 0.2s;
+    }
+    .footer .social i:hover {
+      color: #6c5ce7;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: stretch;
+        text-align: center;
+      }
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .nav-icons {
+        justify-content: center;
+      }
+      .privacy-paper {
+        padding: 1.8rem 1.5rem;
+      }
+      .privacy-paper h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding: 0 1.2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .privacy-paper {
+        padding: 1.2rem 1rem;
+        border-radius: 1.4rem;
+      }
+      .privacy-paper h1 {
+        font-size: 1.6rem;
+      }
+      .back-link {
+        margin-top: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- header (same as home/terms) -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-cart-plus"></i> Cartix
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="nav-icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </header>
+
+  <!-- back link -->
+  <div class="back-link">
+    <a href="#"><i class="fas fa-arrow-left"></i> Back to Cartix home</a>
+  </div>
+
+  <!-- privacy policy content -->
+  <div class="privacy-paper">
+    <h1>Privacy Policy</h1>
+    <div class="subhead">
+      <span><i class="fas fa-calendar-alt"></i> Last updated: June 16, 2026</span>
+      <span><i class="fas fa-shield-alt"></i> Your privacy matters</span>
+    </div>
+
+    <p><strong>Cartix</strong> respects your privacy and is committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you visit our website or make a purchase.</p>
+
+    <div class="badge-grid">
+      <span><i class="fas fa-check-circle" style="color: #6c5ce7;"></i> GDPR compliant</span>
+      <span><i class="fas fa-check-circle" style="color: #6c5ce7;"></i> CCPA ready</span>
+      <span><i class="fas fa-lock" style="color: #6c5ce7;"></i> 256-bit encryption</span>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect personal information that you provide directly, such as when you create an account, place an order, sign up for our newsletter, or contact support. This may include:</p>
+    <ul>
+      <li><strong>Identity data:</strong> name, email address, phone number, billing/shipping address.</li>
+      <li><strong>Payment data:</strong> credit card details (processed securely by our payment partners, we do not store full card numbers).</li>
+      <li><strong>Technical data:</strong> IP address, browser type, device information, and cookies (see section 5).</li>
+      <li><strong>Usage data:</strong> pages visited, products viewed, search history, and referral source.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use your data to:</p>
+    <ul>
+      <li>Process and fulfill your orders, including shipping and returns.</li>
+      <li>Communicate with you about your account, orders, and promotions (with your consent).</li>
+      <li>Improve our website, products, and customer experience.</li>
+      <li>Prevent fraud, enforce our terms, and comply with legal obligations.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><i class="fas fa-envelope" style="margin-right: 10px; color: #6c5ce7;"></i> <strong>Marketing emails:</strong> You can opt out of promotional emails at any time by clicking the “unsubscribe” link in any email or updating your preferences in your account.</p>
+    </div>
+
+    <h2>3. Sharing Your Information</h2>
+    <p>We do not sell or rent your personal data. We may share your information with trusted third parties to operate our business, including:</p>
+    <ul>
+      <li><strong>Service providers:</strong> payment processors, shipping carriers, IT hosts, and email delivery services.</li>
+      <li><strong>Legal compliance:</strong> if required by law or to protect the rights and safety of Cartix, our users, or others.</li>
+      <li><strong>Business transfers:</strong> in the event of a merger, acquisition, or sale of assets, your data may be transferred.</li>
+    </ul>
+
+    <h2>4. Data Security</h2>
+    <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, or destruction. All sensitive data is encrypted using industry-standard SSL/TLS protocols. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+    <h2>5. Cookies & Tracking</h2>
+    <p>We use cookies and similar technologies to enhance your experience, analyze traffic, and personalize content. You can control cookie preferences in your browser settings. Essential cookies are necessary for the site to function; analytics and marketing cookies are optional and can be disabled.</p>
+    <ul>
+      <li><strong>Essential:</strong> session cookies, cart tokens, and security.</li>
+      <li><strong>Analytics:</strong> we use Google Analytics to understand site usage (anonymized IP).</li>
+      <li><strong>Marketing:</strong> retargeting pixels from platforms like Meta and Pinterest (only with your consent).</li>
+    </ul>
+
+    <h2>6. Your Rights</h2>
+    <p>Depending on your location, you may have rights under data protection laws (e.g., GDPR, CCPA). These may include:</p>
+    <ul>
+      <li>Access, correct, or delete your personal data.</li>
+      <li>Object to or restrict processing of your data.</li>
+      <li>Data portability (receive a copy of your data in a structured format).</li>
+      <li>Withdraw consent at any time.</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at <strong>privacy@cartix.co</strong>. We will respond within 30 days.</p>
+
+    <h2>7. Children’s Privacy</h2>
+    <p>Cartix is not intended for children under 16. We do not knowingly collect personal information from minors. If you believe we have inadvertently collected data from a child, please contact us so we can remove it.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. We will notify you of significant changes by posting a prominent notice on our website or via email. The “Last updated” date at the top indicates when the policy was last revised.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this privacy policy, please reach out to our Data Protection Officer:</p>
+    <ul>
+      <li><strong>Email:</strong> privacy@cartix.co</li>
+      <li><strong>Mail:</strong> Cartix Legal, 123 Market St, San Francisco, CA 94103</li>
+      <li><strong>Phone:</strong> +1 (800) 555‑0199</li>
+    </ul>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #6b6b80;"><i class="fas fa-check-circle" style="color: #6c5ce7; margin-right: 6px;"></i> By using Cartix, you consent to the collection and use of your information as described in this Privacy Policy.</p>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copy">
+      <i class="fas fa-cart-plus" style="margin-right: 6px;"></i> Cartix · 2026 · all rights reserved
+    </div>
+    <div class="social">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </footer>
+
+</div> <!-- container -->
+</body>
+</html>
